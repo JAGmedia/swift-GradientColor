@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Third_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4O5-8C-Qzz">
+                                <rect key="frame" x="46.5" y="29" width="227" height="107.5"/>
+                                <string key="text">Is it a Prime
+Number?</string>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter a number" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3tp-Rq-wqr">
+                                <rect key="frame" x="90" y="153" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="QnP-nt-V8E"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcg-Sd-iBy">
+                                <rect key="frame" x="135.5" y="191" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="uKA-1y-e9H"/>
+                                </constraints>
+                                <state key="normal" title="Check!"/>
+                                <connections>
+                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ri-gq-wb1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KF2-M8-yaT">
+                                <rect key="frame" x="16" y="236" width="288" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="7S5-9H-j3q"/>
+                                    <constraint firstAttribute="width" constant="288" id="SBd-OP-Iki"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.27058823529999998" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KF2-M8-yaT" firstAttribute="top" secondItem="rcg-Sd-iBy" secondAttribute="bottom" constant="15" id="21G-Tp-TKx"/>
+                            <constraint firstItem="rcg-Sd-iBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ML-U3-gAN"/>
+                            <constraint firstItem="4O5-8C-Qzz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6ZO-Qk-Qwk"/>
+                            <constraint firstItem="3tp-Rq-wqr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8fV-ur-OeP"/>
+                            <constraint firstItem="3tp-Rq-wqr" firstAttribute="top" secondItem="4O5-8C-Qzz" secondAttribute="bottom" constant="16.5" id="9bg-ZZ-l4w"/>
+                            <constraint firstItem="rcg-Sd-iBy" firstAttribute="top" secondItem="3tp-Rq-wqr" secondAttribute="bottom" constant="8" id="IQx-a9-diH"/>
+                            <constraint firstItem="4O5-8C-Qzz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Kaj-7H-t8A"/>
+                            <constraint firstItem="KF2-M8-yaT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o68-dH-qzZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="KF2-M8-yaT" id="P2i-EN-nfz"/>
+                        <outlet property="numberField" destination="3tp-Rq-wqr" id="p0j-WV-1FH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99.375" y="156.33802816901408"/>
+        </scene>
+    </scenes>
+</document>
